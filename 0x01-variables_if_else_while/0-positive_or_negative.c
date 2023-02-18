@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.>
+#include <stdio.h>
 /**
  * main -print whether the number stored in a variable is positive or negative
  * Return: 0 (Success)
