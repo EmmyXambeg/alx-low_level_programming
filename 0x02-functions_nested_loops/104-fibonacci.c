@@ -22,9 +22,9 @@ int main(void)
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(", %lu", bef);
 		aft += bef;
 		bef = aft - bef;
+		printf(", %lu", bef);
 	}
 
 	bef1 = (bef / l);
