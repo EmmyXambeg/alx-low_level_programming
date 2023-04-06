@@ -11,12 +11,12 @@ size_t print_list_safe(const list_t *head);
  * Return: if list not looped 0, if looped no of unique llops
  */
 
-size_t looped_listint_len (const listint_t *head)
+size_t looped_listint_len(const listint_t *head)
 {
 	const listint_t *tortoise, *hare;
 	size_t nodes = 1;
 
-	if (head == Null || head-> == Null)
+	if (head == Null || head->next == Null)
 		return (0);
 
 	tortoise = head->next;
