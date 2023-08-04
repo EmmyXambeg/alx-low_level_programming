@@ -10,18 +10,18 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int sum = 0;
+	int is;
+	unsigned int sums = 0;
 
 	if (!b)
 		return (0);
 
-	for (i = 0; b[i]; i++)
+	for (is = 0; b[is]; is++)
 	{
-		if (b[i] < '0' || b[i] > '1')
+		if (b[is] < '0' || b[is] > '1')
 			return (0);
-		sum = 2 * sum + (b[i] - '0');
+		sums = 2 * sums + (b[is] - '0');
 	}
 
-	return (sum);
+	return (sums);
 }
